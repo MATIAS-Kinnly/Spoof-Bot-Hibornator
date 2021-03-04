@@ -81,7 +81,7 @@ namespace Spoof_Bot_Hybernator
                 {
                     Carrier_hold.Text = "@tmomail.net";
                 }
-                else if ((bool)TMobile.IsChecked)
+                else if ((bool)ATT.IsChecked)
                 {
                     Carrier_hold.Text = "@mms.att.net";
                 }
