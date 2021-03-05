@@ -1,0 +1,49 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Spoof_Bot_Hybernator.UC"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Spoof_Bot_Hybernator.UC.SMSSPAM"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="560" Height="320">
+    <Grid>
+        <Label Content="Amount:" HorizontalAlignment="Left" Margin="300,10,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="130"/>
+        <Label Content="Number:&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" Height="25" Width="60"/>
+        <TextBox x:Name="number_input" HorizontalAlignment="Left" Height="20" Margin="70,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontSize="14" FontWeight="Bold" FontFamily="Segoe UI Semibold" TextChanged="TextBox_TextChanged" Background="{x:Null}" BorderBrush="White" SelectionBrush="White" Foreground="White" MaxLines="1" MaxLength="15" CaretBrush="White"/>
+        <Label Content="Domain:" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Foreground="White" Height="25" Width="60"/>
+        <TextBox x:Name="Domain" HorizontalAlignment="Left" Height="20" Margin="70,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Foreground="White" Background="{x:Null}" SelectionBrush="White" BorderBrush="White" FontFamily="Segoe UI Semibold" FontWeight="Bold" MaxLines="1" CaretBrush="White"/>
+        <Label Content="Message:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="60"/>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Height="95" Margin="70,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" SelectionBrush="White" Foreground="White" Background="{x:Null}" BorderBrush="White" CaretBrush="White" TextChanged="TextBox_TextChanged_1" SpellCheck.IsEnabled="True" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+        <Label Content="Carrier:" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Foreground="White" Height="25" Width="60"/>
+        <RadioButton x:Name="Verizon" Content="Verizon" HorizontalAlignment="Left" Margin="224,35,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <RadioButton x:Name="TMobile" Content="TMobile" HorizontalAlignment="Left" Margin="224,55,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="#FF707070"/>
+        <RadioButton x:Name="ATT" Content="AT&amp;T" HorizontalAlignment="Left" Margin="224,75,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox x:Name="Amount" HorizontalAlignment="Left" Margin="305,35,0,0" VerticalAlignment="Top" Width="95" Height="20">
+            <System:String>10</System:String>
+            <System:String>50</System:String>
+            <System:String>100</System:String>
+            <System:String>250</System:String>
+            <System:String>500</System:String>
+            <System:String>750</System:String>
+            <System:String>1000</System:String>
+            <System:String>2000</System:String>
+            <System:String>3000</System:String>
+            <System:String>4000</System:String>
+            <System:String>5000</System:String>
+            <System:String>10000</System:String>
+            <System:String>15000</System:String>
+            <System:String>20000</System:String>
+            <System:String>CUSTOM</System:String>
+        </ComboBox>
+        <Label Content="Custom:" HorizontalAlignment="Left" Margin="400,10,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="55"/>
+        <TextBox x:Name="CUSTOM_AMOUNT" HorizontalAlignment="Left" Height="20" Margin="410,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Foreground="White" Background="{x:Null}" BorderBrush="White" SelectionBrush="White" CaretBrush="White" FontWeight="Bold" MaxLength="5" MaxLines="1"/>
+        <Button Content="I Don't Know The Carrier" HorizontalAlignment="Left" Margin="283,165,0,0" VerticalAlignment="Top" Width="267" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click_2"/>
+        <Button Content="Copy Output" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Width="540" Foreground="White" BorderBrush="White" Background="{x:Null}" Click="Button_Click"/>
+        <Button Content="Hybernate!" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="267" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click_1"/>
+        <Label Content="Output:" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="50"/>
+        <TextBox x:Name="Output" HorizontalAlignment="Left" Height="23" Margin="60,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="490" Background="{x:Null}" BorderBrush="White" Foreground="White" CaretBrush="White" SelectionBrush="White" IsReadOnly="True" MaxLines="1" FontSize="14"/>
+        <TextBox x:Name="Carrier_hold" HorizontalAlignment="Left" Height="3" Margin="0,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="5" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="{x:Null}" Opacity="0" IsReadOnly="True"/>
+
+    </Grid>
+</UserControl>
