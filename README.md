@@ -11,4 +11,4 @@ added email option
 fixed mistake with AT&T option
 
 Don't Have Spoof Bot?
-Spoof Bot : https://discord.com/invite/fGtMyMHEtB
+Spoof Bot : https://discord.gg/ngC2YeCfJw
